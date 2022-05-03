@@ -62,4 +62,18 @@ public class HelloController {
 
     @FXML
     private ImageView ImageRule2;
+
+    @FXML
+    private Button ButtonToGame;
+
+
+    @FXML
+    void GoToGame(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("game-window.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setTitle("RPG");
+        stage.setScene(scene);
+        stage.show();
+    }
 }
