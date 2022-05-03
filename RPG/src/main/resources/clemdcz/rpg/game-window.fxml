@@ -4,7 +4,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clemdcz.rpg.GameController">
    <children>
       <ImageView fx:id="hero1" fitHeight="84.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
@@ -20,17 +19,17 @@
       <ImageView fitHeight="84.0" fitWidth="84.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="84.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@hunter512px.png" />
+            <Image url="@hunter.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="84.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@mage512px.png" />
+            <Image url="@mage.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="84.0" fitWidth="84.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@healer512px.png" />
+            <Image url="@healer.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="84.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
@@ -40,12 +39,12 @@
       </ImageView>
       <ImageView fitHeight="84.0" fitWidth="84.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@hunter512px.png" />
+            <Image url="@hunter.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="84.0" fitWidth="84.0" layoutX="84.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@mage512px.png" />
+            <Image url="@mage.png" />
          </image>
       </ImageView>
    </children>
