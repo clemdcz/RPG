@@ -31,7 +31,7 @@
          </font>
       </Text>
       <Button fx:id="BoutonNext" layoutX="525.0" layoutY="350.0" mnemonicParsing="false" onAction="#Suivant" text="Suivant" visible="false" />
-      <Button layoutX="284.0" layoutY="265.0" mnemonicParsing="false" onAction="#validation" text="Valider" />
+      <Button fx:id="valid" layoutX="284.0" layoutY="265.0" mnemonicParsing="false" onAction="#validation" text="Valider" />
       <Label fx:id="LabelHero" layoutX="194.0" layoutY="322.0" textAlignment="JUSTIFY" />
       <Text layoutX="109.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous pouvez choisir jusqu'à 6 héros pour cette aventure !">
          <font>

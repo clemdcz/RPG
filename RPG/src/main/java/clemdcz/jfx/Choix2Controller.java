@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -43,6 +44,24 @@ public class Choix2Controller {
     @FXML
     void Select(ActionEvent event) {
 
+    }
+
+    @FXML
+    private Label labelChoix2;
+
+    public void displayChoiceHero(int nombreHero){
+        labelChoix2.setText("Veuillez maintenant choisir le type de vos "+ nombreHero + " héro(s) !");
+    }
+
+    int nombreValider;
+
+    @FXML
+    void ValiderPlus(ActionEvent event) {
+        nombreValider++;
+
+    }
+
+    public void ChoixTotal(int nombreHero){
     }
 
 }

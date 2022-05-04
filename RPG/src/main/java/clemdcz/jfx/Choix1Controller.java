@@ -18,6 +18,9 @@ public class Choix1Controller {
 
     private Stage stage;
     private Scene scene;
+    private Parent root;
+
+    int nombreHero;
 
     @FXML
     private Button BoutonNext;
@@ -27,7 +30,14 @@ public class Choix1Controller {
 
     @FXML
     void Suivant(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("choix2.fxml"));
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("choix2.fxml"));
+        root = loader.load();
+
+        Choix2Controller choix2Controller = loader.getController();
+        choix2Controller.displayChoiceHero(nombreHero);
+        choix2Controller.ChoixTotal(nombreHero);
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setTitle("RPG");
@@ -35,11 +45,11 @@ public class Choix1Controller {
         stage.show();
     }
 
-
     @FXML
     private Label LabelHero;
 
-    int nombreHero;
+    @FXML
+    private Button valid;
 
     @FXML
     void validation(ActionEvent event) {
@@ -50,6 +60,8 @@ public class Choix1Controller {
                 LabelHero.setText(" Félications ! Vous avez choisi "+nombreHero+" héro(s)");
                 LabelHero.setStyle("-fx-text-fill: green;");
                 BoutonNext.setVisible(true);
+                valid.setDisable(true);
+
             }
             else{
                 LabelHero.setText("Veuillez choisir un nombre de héros entre 1 et 6");
