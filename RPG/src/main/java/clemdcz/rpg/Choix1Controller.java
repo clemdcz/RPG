@@ -7,7 +7,9 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -31,6 +33,37 @@ public class Choix1Controller {
         stage.setTitle("RPG");
         stage.setScene(scene);
         stage.show();
+    }
+
+
+    @FXML
+    private Label LabelHero;
+
+    int nombreHero;
+
+    @FXML
+    void validation(ActionEvent event) {
+        try{
+            nombreHero = Integer.parseInt(ChoixNombreHero.getText());
+
+            if (nombreHero > 0 && nombreHero < 7){
+                LabelHero.setText(" Félications ! Vous avez choisi "+nombreHero+" héro(s)");
+                LabelHero.setStyle("-fx-text-fill: green;");
+                BoutonNext.setVisible(true);
+            }
+            else{
+                LabelHero.setText("Veuillez choisir un nombre de héros entre 1 et 6");
+                LabelHero.setStyle("-fx-text-fill: red;");
+            }
+        }
+        catch (NumberFormatException e){
+            LabelHero.setText("Veuiller entrer un chiffre entre 1 et 6");
+            LabelHero.setStyle("-fx-text-fill: red;");
+        }
+        catch (Exception e){
+            LabelHero.setText("erreur");
+            LabelHero.setStyle("-fx-text-fill: red;");
+        }
     }
 
 }
