@@ -1,8 +1,8 @@
-module clemdcz.rpg {
+module clemdcz.jfx {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens clemdcz.rpg to javafx.fxml;
-    exports clemdcz.rpg;
+    opens clemdcz.jfx to javafx.fxml;
+    exports clemdcz.jfx;
 }
