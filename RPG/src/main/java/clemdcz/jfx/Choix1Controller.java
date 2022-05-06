@@ -36,7 +36,6 @@ public class Choix1Controller {
 
         Choix2Controller choix2Controller = loader.getController();
         choix2Controller.displayChoiceHero(nombreHero);
-        choix2Controller.ChoixTotal(nombreHero);
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);

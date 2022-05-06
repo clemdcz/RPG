@@ -41,10 +41,6 @@ public class Choix2Controller {
         combobox.setItems(list);
     }
 
-    @FXML
-    void Select(ActionEvent event) {
-
-    }
 
     @FXML
     private Label labelChoix2;
@@ -56,12 +52,24 @@ public class Choix2Controller {
     int nombreValider;
 
     @FXML
+    private Button valider2;
+
+    @FXML
+    private Label labelchoix;
+
+    @FXML
     void ValiderPlus(ActionEvent event) {
         nombreValider++;
-
+        for (int i=0; i <= 5; i++){
+            if (i==nombreValider){
+                labelchoix.setText(i + "/5 héro(s) choisi !");
+            }
+        }
+        if (nombreValider == 5){
+            valider2.setDisable(true);
+            BoutonNext2.setVisible(true);
+        }
     }
-
-    public void ChoixTotal(int nombreHero){
-    }
+    //// 5 est à remplacer par la valeur nombreHero du controlleur précédent
 
 }
