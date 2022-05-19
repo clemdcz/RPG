@@ -1,0 +1,9 @@
+.bodybg{
+    -fx-background-image: url('couverture.png');
+    -fx-background-size: 100% 100%;
+}
+
+.bodybg2{
+    -fx-background-image: url('bg6.jpeg');
+    -fx-background-size: 100% 100%;
+}
