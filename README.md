@@ -12,3 +12,5 @@ Lorsqu’ils n’ont plus de manapoints, vos SpellCasters verront leurs dégats 
 A chaque fin de round, vous pourriez choisir d’ajouter des flèches à vos Hunters ou d’augmenter les manapoints de vos SpellCasters.
 
 C’est bon, vous êtes prêts ! Bonne chance Capitaine !
+
+PS : Attention pour le dossier Test, il faut "mark directory as Source Test Root" !!
