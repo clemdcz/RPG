@@ -1,0 +1,19 @@
+.bodybg{
+    -fx-background-image: url('couverture.png');
+    -fx-background-size: 100% 100%;
+}
+
+.bodybg2{
+    -fx-background-image: url('parchemin.jpg');
+    -fx-background-size: 100% 100%;
+}
+
+.bodybg3{
+    -fx-background-image: url('decor.gif');
+    -fx-background-size: 100% 100%;
+}
+
+.bodybg4{
+    -fx-background-image: url("regles.png");
+    -fx-background-size: 100% 100%;
+}
